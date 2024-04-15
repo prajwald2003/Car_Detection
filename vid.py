@@ -14,8 +14,6 @@ while True:
     ret, aaa = cap.read()
 	
     # convert to gray scale of each frames
-   
-	
 
     # Detects cars of different sizes in the input image
     cars = car_cascade.detectMultiScale(aaa, 1.1, 1)
@@ -29,9 +27,5 @@ while True:
     #Wait for Esc key to stop
     if cv2.waitKey(33) == 27:
         break
-
-     
-
-
 # De-allocate any associated memory usage
 cv2.destroyAllWindows()
